@@ -1,0 +1,55 @@
+@@include("./partials/main.html")
+    <head>
+        @@include("./partials/title-meta.html", {"title": "index-1"})
+
+
+        @@include('./partials/head-css.html')
+
+         @@include('./partials/switcher.html')
+
+    </head>
+    
+    @@include('./partials/body.html')
+
+
+        <div class="main-content">
+            <div class="page-content">
+
+                <section class="flex items-center justify-center min-h-screen py-10 group-data-[theme-color=violet]:bg-violet-500/10 group-data-[theme-color=sky]:bg-sky-500/10 group-data-[theme-color=red]:bg-red-500/10 group-data-[theme-color=green]:bg-green-500/10 group-data-[theme-color=pink]:bg-pink-500/10 group-data-[theme-color=blue]:bg-blue-500/10 dark:bg-neutral-700">
+                    <div class="container mx-auto">
+                        <div class="grid items-center justify-center grid-cols-12">
+                            <div class="col-span-12 lg:col-span-6 lg:col-start-4">
+                                <div class="py-10 text-center">
+                                    <div class="pb-5 mb-5">
+                                        <img src="assets/images/animat-rocket-color.gif" alt="" class="mx-auto h-36">
+                                    </div>
+                                    <h1 class="mb-2 text-gray-900 dark:text-white">We're Launching Soon..!!</h1>
+                                    <p class="pb-5 mb-5 text-gray-500 dark:text-gray-300">Start working with Jobcy that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                                    <div id="countdown" class="flex flex-wrap justify-center "></div>
+
+                                    <form action="#" class="mt-4 coming-soon-subacribe">
+                                        <div class="flex mt-8 mb-3">
+                                            <input type="text" class="w-full py-3 bg-transparent rounded ltr:border-r-0 rtl:border-l-0 ltr:rounded-r-none rtl:rounded-l-none border-gray-200/50 placeholder:text-sm dark:border-neutral-600 dark:text-white" placeholder="Enter your email">
+                                            <button class="text-white border-transparent btn group-data-[theme-color=violet]:bg-violet-500 group-data-[theme-color=sky]:bg-sky-500 group-data-[theme-color=red]:bg-red-500 group-data-[theme-color=green]:bg-green-500 group-data-[theme-color=pink]:bg-pink-500 group-data-[theme-color=blue]:bg-blue-500 ltr:rounded-l-none rtl:rounded-r-none" type="button">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+       
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/pages/switcher.js"></script>
+    
+     <script src="assets/js/pages/coming-soon.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    
+</body>
+</html>
